@@ -1,0 +1,42 @@
+body {
+    background-color: #2E2E2E; /* Dark Gray */
+    color: #FF5555; /* Soft Red for Error Text */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Error Box Styling */
+.error-box {
+    background-color: #440000; /* Deep Red */
+    border: 2px solid #FF5555; /* Highlight Border */
+    padding: 15px;
+    width: 60%;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(255, 85, 85, 0.3);
+}
+
+/* Error Text */
+.error-box h2 {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.error-box p {
+    font-size: 18px;
+    color: #FFDADA; /* Faded Red */
+}
+
+/* Animation for Blinking Effect */
+@keyframes blink {
+    0% { opacity: 1;}
+    50% { opacity: 0.5;}
+    100% { opacity: 1;}
+}
+
+.blinking-text {
+    animation: blink 1s infinite;
+    color: #FF3333;
+    font-weight: bold;
+}
